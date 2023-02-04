@@ -111,11 +111,80 @@
   margin-bottom: 40px;
 }
 
-.second-section {
-  margin-top: 30px;
-}
-
 .second-section h1 {
   text-align: center;
   display: block;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.companysection {
+  display: flex;
+  margin: 30px;
+  margin-top: 0;
+  padding: 40px;
+}
+
+.company {
+  margin: 10px;
+  margin-top: 0;
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.company:hover {
+  border: 2px solid blue;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.company-image {
+  width: 270px;
+  height: 200px;
+}
+
+.company h1 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.company h3 {
+  font-size: 15px;
+  font-weight: 100;
+}
+.company-location {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.company-location h4 {
+  margin-left: 10px;
+}
+
+.company-achivement {
+  text-align: center;
+  margin: 0;
+  background: black;
+  height: 60px;
+  color: white;
+  padding: 10px;
+}
+
+.view-more {
+  text-align: center;
+}
+
+.view-more button {
+  padding: 10px;
+  font-size: 30px;
+  border: 2px outset;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.view-more button:hover {
+  opacity: 80%;
 }
