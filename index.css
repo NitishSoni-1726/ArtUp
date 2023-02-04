@@ -101,7 +101,8 @@
   width: 100%;
 }
 
-.videotext h1 {
+.container .videotext h1 {
+  text-align: left;
   font-size: 40px;
 }
 
@@ -111,7 +112,7 @@
   margin-bottom: 40px;
 }
 
-.second-section h1 {
+.container h1 {
   text-align: center;
   display: block;
   margin-top: 40px;
@@ -149,10 +150,18 @@
   text-align: left;
 }
 
-.company h3 {
+.company p {
   font-size: 15px;
   font-weight: 100;
 }
+
+.company .funded {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  background-color: green;
+}
+
 .company-location {
   display: flex;
   align-items: center;
@@ -187,4 +196,102 @@
 
 .view-more button:hover {
   opacity: 80%;
+}
+
+.third-section {
+  margin-top: 60px;
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+.funding-data {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.funding-commited {
+  border-right: 2px solid white;
+  width: 50%;
+}
+
+.funding-commited h4 {
+  text-align: center;
+  font-weight: 100;
+}
+
+.total-investors {
+  border-left: 2px solid white;
+  width: 50%;
+}
+
+.total-investors h4 {
+  text-align: center;
+  font-weight: 100;
+}
+
+.fifth-section {
+  padding: 50px;
+  padding-top: 100px;
+  background: black;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+}
+
+.fifth-section a {
+  display: block;
+}
+
+.footer {
+  width: 20%;
+  text-align: center;
+}
+
+.footer .heading {
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .subheading {
+  cursor: pointer;
+  opacity: 80%;
+  margin: 10px;
+}
+
+.footer .subheading:hover {
+  opacity: 100%;
+}
+
+.footer i {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.sixth-section {
+  margin: 0;
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.802);
+  color: white;
+}
+
+.content h2 {
+  font-size: 10px;
+  opacity: 80%;
+}
+
+.content p {
+  font-size: 12px;
+  opacity: 80%;
+}
+
+.content span {
+  cursor: pointer;
 }
