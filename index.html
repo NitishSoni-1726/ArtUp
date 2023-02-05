@@ -9,23 +9,64 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta Stencil"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="navigations">
-      <nav class="section1">
-        <a class="navigation" href="#raisecapital">Raise-Capital</a>
-        <a class="navigation" href="#browse">Browse-Start-Ups</a>
-      </nav>
-      <a class="icon" href="#index">Art<span>Up</span></a>
-      <nav class="section2">
-        <a class="navigation" href="#about">About-Us</a>
-        <a class="navigation" href="#login">Login-In</a>
-        <button class="signup" href="#signup">Get Started</button>
-        <i class="fa fa-search" id="search"></i>
+      <div class="navicon" id="toggle-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="logo">
+        <a href="index.html">ArtUp</a>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#raisecapital">Raise-Capital</a></li>
+          <li><a href="#browse">Browse-Startups</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#signin">Sign-In</a></li>
+          <li>
+            <a href="#signup"><button>Get Started</button></a>
+          </li>
+          <li>
+            <a href="#search"><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
       </nav>
     </div>
     <div class="container">
+      <nav class="toggle-menu" id="toggle-menu">
+        <ul class="toggle-menu-list">
+          <li><a href="#raisecapital">Raise-Capital</a></li>
+          <li><a href="#browse">Browse-Startups</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#signin">Sign-In</a></li>
+          <li>
+            <a href="#signup"><button>Get Started</button></a>
+          </li>
+          <li>
+            <a href="#search"><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
       <div class="first-section">
         <div class="bacground-video">
           <video
@@ -43,7 +84,9 @@
             Start and manage a professional fundraise to attract quality
             accredited investors.
           </h3>
-          <button class="signup" href="#signup">Get Started</button>
+          <div class="signup">
+            <button class="signupbutton" href="#signup">Get Started</button>
+          </div>
         </div>
       </div>
       <div class="second-section">
@@ -120,8 +163,6 @@
                 omnis.
               </p>
             </div>
-          </div>
-          <div class="companysection">
             <div class="company">
               <img class="company-image" src="Asset/1.jpg" />
               <h1 class="company-name">Lorem, ipsum.</h1>
@@ -191,9 +232,9 @@
               </p>
             </div>
           </div>
-          <div class="view-more">
-            <button>View More</button>
-          </div>
+        </div>
+        <div class="view-more">
+          <button>View More</button>
         </div>
       </div>
       <div class="third-section">
@@ -289,8 +330,6 @@
                 omnis.
               </p>
             </div>
-          </div>
-          <div class="companysection">
             <div class="company">
               <img class="company-image" src="Asset/1.jpg" />
               <h4 class="funded">Funded</h4>
@@ -364,9 +403,9 @@
               </p>
             </div>
           </div>
-          <div class="view-more">
-            <button>View More</button>
-          </div>
+        </div>
+        <div class="view-more">
+          <button>View More</button>
         </div>
       </div>
       <div class="fifth-section">
@@ -426,5 +465,6 @@
         <div></div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -4,81 +4,129 @@
 
 .navigations {
   display: flex;
-  align-items: center;
   width: 100%;
-  background-color: black;
-  height: 60px;
+  height: 70px;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+  background: black;
+  color: white;
+  align-items: center;
 }
 
-.section1 {
+.logo a {
+  font-family: "Allerta Stencil";
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  letter-spacing: 20px;
+}
+
+.navicon {
+  display: none;
+  margin: 15px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.navicon div {
+  width: 30px;
+  height: 2px;
+  border-top: 2px solid white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+}
+
+.navigation ul {
   display: flex;
   align-items: center;
 }
 
-.section2 {
-  display: flex;
-  align-items: center;
-}
-
-.section1 .navigation {
-  color: white;
-  text-decoration: none;
+.navigation li {
+  font-family: "Montserrat", sans-serif;
+  margin: 20px;
+  list-style: none;
   font-size: 20px;
-  margin-left: 15px;
 }
 
-.section2 .navigation {
-  color: white;
+.navigation li a {
   text-decoration: none;
-  font-size: 20px;
-  margin-right: 15px;
+  color: white;
 }
-
-.navigation:hover {
+.navigation li:hover {
+  cursor: pointer;
   transform: scale(1.1);
 }
 
-.icon {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  margin: auto;
-  letter-spacing: 20px;
-  word-spacing: 0;
-}
-
-.signup {
-  background: transparent;
-  border: 2px solid white;
-  border-radius: 40px;
-  color: white;
+.navigation li button {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-
-.signup:hover {
-  background: white;
-  color: black;
-}
-
-#search {
-  cursor: pointer;
+  background: transparent;
   color: white;
-  font-size: 25px;
-  margin-right: 15px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.toggle-menu {
+  padding: 20px;
+  display: none;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+.toggle-menu ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle-menu li {
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 20px;
+  margin-right: 90px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.toggle-menu li:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.toggle-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.toggle-menu li button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
 }
 
 .container {
   padding: 0;
   margin: 0;
-  position: fixed;
-  top: 61px;
+  position: absolute;
+  top: 70px;
   left: 0;
-  height: 92vh;
+  height: 90vh;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -90,39 +138,81 @@
 }
 
 .video {
-  width: 1400px;
+  width: 1800px;
 }
 
 .videotext {
-  margin-top: 250px;
-  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   color: white;
   position: absolute;
-  width: 100%;
+  margin-top: 50px;
 }
 
 .container .videotext h1 {
-  text-align: left;
+  font-family: "Cinzel";
+  padding: 10px;
+  margin: 20px;
   font-size: 40px;
 }
 
 .videotext h3 {
-  text-align: left;
-  width: 400px;
+  font-family: "Fauna One";
+  padding: 10px;
+  margin: 20px;
   margin-bottom: 40px;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+.signup button {
+  padding: 10px;
+  font-size: 40px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.signup button:hover {
+  background: white;
+  color: black;
 }
 
 .container h1 {
   text-align: center;
   display: block;
-  margin-top: 40px;
   margin-bottom: 0;
 }
 
-.companysection {
+.title {
+  font-family: "Cinzel";
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.company-data {
   display: flex;
-  margin: 30px;
-  margin-top: 0;
+  justify-content: center;
+}
+
+.companysection {
+  border: 2px groove;
+  width: 90%;
+  overflow-x: scroll;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 50px;
   padding: 40px;
 }
 
@@ -146,11 +236,13 @@
 }
 
 .company h1 {
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   text-align: left;
 }
 
 .company p {
+  font-family: "Prata", serif;
   font-size: 15px;
   font-weight: 100;
 }
@@ -172,7 +264,9 @@
   margin-left: 10px;
 }
 
-.company-achivement {
+.company .company-achivement {
+  font-size: 12px;
+  font-family: "Prata", serif;
   text-align: center;
   margin: 0;
   background: black;
@@ -186,12 +280,14 @@
 }
 
 .view-more button {
-  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
   font-size: 30px;
   border: 2px outset;
   background-color: black;
   color: white;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 .view-more button:hover {
@@ -218,8 +314,13 @@
 }
 
 .funding-commited h4 {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 100;
+}
+
+.funding-commited h1 {
+  font-family: "Lora", serif;
 }
 
 .total-investors {
@@ -228,8 +329,13 @@
 }
 
 .total-investors h4 {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 100;
+}
+
+.total-investors h1 {
+  font-family: "Lora", serif;
 }
 
 .fifth-section {
@@ -294,4 +400,122 @@
 
 .content span {
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.toggle-active {
+  display: block;
+}
+
+@media only screen and (min-width: 1066px) and (max-width: 1400px) {
+  .video {
+    width: 1400px;
+  }
+}
+
+@media only screen and (min-width: 699px) and (max-width: 1065px) {
+  .navicon {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .navigation {
+    display: none;
+  }
+  .video {
+    width: 1300px;
+  }
+}
+
+@media only screen and (min-width: 298px) and (max-width: 698px) {
+  .navicon {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .navigation {
+    display: none;
+  }
+  .container {
+    top: 77px;
+  }
+  .video {
+    width: 1200px;
+  }
+  .companysection {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .company {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .company:hover {
+    transform: scale(1);
+  }
+  .company-image {
+    padding: 0;
+    margin: 0;
+    width: 250px;
+  }
+  .funding-data {
+    flex-direction: column;
+  }
+  .funding-commited {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+  .total-investors {
+    width: 100%;
+    border: none;
+    border-top: 2px solid white;
+  }
+  .fifth-section {
+    flex-direction: column;
+    height: 760px;
+  }
+  .footer {
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+  .footer .heading {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .content {
+    padding: 1px;
+  }
+  .content h2 {
+    margin-top: 0;
+    font-size: 7px;
+  }
+  .content p {
+    margin-top: 30px;
+    padding: 0;
+    font-size: 7px;
+    text-align: left;
+  }
 }
