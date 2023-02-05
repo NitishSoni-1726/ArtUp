@@ -456,6 +456,10 @@
   .video {
     width: 1200px;
   }
+
+  .videotext {
+    margin-top: 30px;
+  }
   .companysection {
     padding: 10px;
     border: none;
@@ -517,5 +521,15 @@
     padding: 0;
     font-size: 7px;
     text-align: left;
+  }
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 }
