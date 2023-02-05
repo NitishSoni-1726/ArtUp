@@ -21,6 +21,7 @@
   font-size: 30px;
   margin-left: 20px;
   letter-spacing: 20px;
+  cursor: pointer;
 }
 
 .navicon {
@@ -64,6 +65,9 @@
 .navigation li:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+.active {
+  font-size: 30px;
 }
 
 .navigation li button {
@@ -122,6 +126,7 @@
   color: black;
   border: 2px solid black;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .container {
@@ -425,13 +430,13 @@
   display: none;
 }
 
-@media only screen and (min-width: 1066px) and (max-width: 1400px) {
+@media only screen and (min-width: 1099px) and (max-width: 1400px) {
   .video {
     width: 1400px;
   }
 }
 
-@media only screen and (min-width: 699px) and (max-width: 1065px) {
+@media only screen and (min-width: 699px) and (max-width: 1100px) {
   .navicon {
     display: block;
   }

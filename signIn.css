@@ -1,0 +1,120 @@
+.signincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.signin {
+  margin-top: 50px;
+  padding: 50px;
+  width: 90%;
+  border: 2px inset;
+  border-radius: 5px;
+}
+
+.signin h1 {
+  margin: 0;
+  font-family: "Cinzel";
+  font-weight: 500;
+}
+
+.signin h2 {
+  margin: 0;
+  text-align: center;
+  font-family: "Cinzel";
+  font-weight: 900;
+  border-bottom: 2px inset;
+  padding-bottom: 30px;
+}
+
+.signinoption {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.signinoption h3 {
+  text-align: center;
+  font-family: "Fauna One";
+}
+.signinoption h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.signinoption input {
+  display: block;
+  width: 100%;
+  margin: 10px;
+  height: 30px;
+  border: 2px solid black;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.viasocial {
+  border-right: 2px solid black;
+  padding: 30px;
+  width: 33%;
+}
+
+.viasocial a {
+  margin: 0;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 50px;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social h3 {
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 12px;
+  height: 40px;
+  margin: 0;
+  width: 100%;
+  background: black;
+  color: white;
+}
+.withemail {
+  padding: 30px;
+  width: 33%;
+}
+
+.forgotpassword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.withemail a {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.createnewaccount {
+  border-left: 2px solid black;
+  padding: 30px;
+  width: 33%;
+}
+
+.signinoption .button {
+  height: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 0;
+  font-size: 15px;
+  text-align: center;
+}
