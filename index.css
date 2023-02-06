@@ -430,7 +430,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 1099px) and (max-width: 1400px) {
+@media only screen and (min-width: 1101px) and (max-width: 1400px) {
   .video {
     width: 1400px;
   }
@@ -511,7 +511,7 @@
   }
   .fifth-section {
     flex-direction: column;
-    height: 760px;
+    height: 830px;
   }
   .footer {
     padding-top: 0;

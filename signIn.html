@@ -77,34 +77,49 @@
               <h3>Log-In Via Social</h3>
               <div class="social">
                 <a>
-                  <i class="fa fa-facebook-square"></i>
+                  <i class="fa fa-facebook-square viafacebook"></i>
                 </a>
-                <h3>Via Facebook</h3>
+                <h3 class="facebook">Via Facebook</h3>
               </div>
               <div class="social">
                 <a>
-                  <i class="fa fa-google-plus-square"></i>
+                  <i class="fa fa-google-plus-square viagoogle"></i>
                 </a>
-                <h3>Via Google</h3>
+                <h3 class="google">Via Google</h3>
               </div>
               <div class="social">
                 <a>
-                  <i class="fa fa-linkedin-square"></i>
+                  <i class="fa fa-linkedin-square vialinkedin"></i>
                 </a>
-                <h3>Via LinkedIn</h3>
+                <h3 class="linkedin">Via LinkedIn</h3>
               </div>
             </div>
             <div class="withemail">
               <h3>Log-In with Email</h3>
               <form>
                 <h4>Email Address</h4>
-                <input type="text" placeholder="Email" required />
+                <input
+                  id="loginemail"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
                 <h4>Password</h4>
-                <input type="text" placeholder="Password" required />
+                <input
+                  id="loginpassword"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
                 <div class="forgotpassword">
                   <a>Forgot Password ?</a>
                 </div>
-                <input class="button" type="submit" value="Log-In" />
+                <input
+                  id="loginsubmit"
+                  class="button"
+                  type="submit"
+                  value="Log-In"
+                />
               </form>
             </div>
             <div class="createnewaccount">
@@ -112,14 +127,39 @@
               <form>
                 <div>
                   <h4>First and Last Name</h4>
-                  <input type="text" placeholder="First Name" required />
-                  <input type="text" placeholder="Last Name" required />
+                  <input
+                    id="registerfirstname"
+                    type="text"
+                    placeholder="First Name"
+                    required
+                  />
+                  <input
+                    id="registerlastname"
+                    type="text"
+                    placeholder="Last Name"
+                    required
+                  />
                 </div>
                 <h4>Email Address</h4>
-                <input type="text" placeholder="Enter Your Email" required />
+                <input
+                  id="registeremail"
+                  type="email"
+                  placeholder="Enter Your Email"
+                  required
+                />
                 <h4>Password</h4>
-                <input type="text" placeholder="Enter Password" required />
-                <input class="button" type="submit" value="Create Account" />
+                <input
+                  id="registerpassword"
+                  type="password"
+                  placeholder="Enter Password"
+                  required
+                />
+                <input
+                  id="registersubmit"
+                  class="button"
+                  type="submit"
+                  value="Create Account"
+                />
               </form>
             </div>
           </div>
@@ -127,35 +167,39 @@
       </div>
       <div class="fifth-section">
         <div class="footer">
-          <a class="heading">Get Started</a>
-          <a class="subheading">Start a Fundraise</a>
-          <a class="subheading">Investor Sign Up</a>
-          <a class="subheading">Account Login</a>
+          <a class="heading" id="footer-get-started">Get Started</a>
+          <a class="subheading" id="footer-start-a-fundraise"
+            >Start a Fundraise</a
+          >
+          <a class="subheading" id="footer-investor-signup">Investor Sign Up</a>
+          <a class="subheading" id="footer-acount-login">Account Login</a>
         </div>
         <div class="footer">
-          <a class="heading">Browse</a>
-          <a class="subheading">Trending</a>
-          <a class="subheading">Recently Funded</a>
-          <a class="subheading">New and Noteworthy</a>
-          <a class="subheading">Communities</a>
+          <a class="heading" id="footer-browse">Browse</a>
+          <a class="subheading" id="footer-trending">Trending</a>
+          <a class="subheading" id="footer-recently-funded">Recently Funded</a>
+          <a class="subheading" id="footer-new">New and Noteworthy</a>
+          <a class="subheading" id="footer-communities">Communities</a>
         </div>
         <div class="footer">
           <a class="heading">Resources</a>
-          <a class="subheading">FAQ</a>
-          <a class="subheading">Guidelines</a>
-          <a class="subheading">Contact Us</a>
+          <a class="subheading" id="footer-faq">FAQ</a>
+          <a class="subheading" id="footer-guidelines">Guidelines</a>
+          <a class="subheading" id="footer-contact">Contact Us</a>
         </div>
         <div class="footer">
           <a class="heading">Legal</a>
-          <a class="subheading">Privacy Policy</a>
-          <a class="subheading">Terms of Service</a>
+          <a class="subheading" id="footer-privacy-policy">Privacy Policy</a>
+          <a class="subheading" id="footer-terms-of-service"
+            >Terms of Service</a
+          >
         </div>
         <div class="footer">
           <a class="heading">Follow</a>
           <div class="accounts">
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
+            <a id="footer-twitter"><i class="fa fa-twitter"></i></a>
+            <a id="footer-instagram"><i class="fa fa-instagram"></i></a>
+            <a id="footer-linkedin"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -183,4 +227,5 @@
     </div>
   </body>
   <script src="index.js"></script>
+  <script src="signin.js"></script>
 </html>
