@@ -1,5 +1,5 @@
 window.onload = Script;
-function Script() {
+function Script(event) {
   event.preventDefault();
   const toggleButton = document.getElementById("toggle-button");
   const toggleList = document.getElementById("toggle-menu");
