@@ -14,12 +14,14 @@
 }
 
 .signin h1 {
+  cursor: default;
   margin: 0;
   font-family: "Cinzel";
   font-weight: 500;
 }
 
 .signin h2 {
+  cursor: default;
   margin: 0;
   text-align: center;
   font-family: "Cinzel";
@@ -36,10 +38,12 @@
 }
 
 .signinoption h3 {
+  cursor: default;
   text-align: center;
   font-family: "Fauna One";
 }
 .signinoption h4 {
+  cursor: default;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   margin: 0;
@@ -58,6 +62,8 @@
 }
 
 .viasocial {
+  display: flex;
+  flex-direction: column;
   border-right: 2px solid black;
   padding: 30px;
   width: 33%;
@@ -90,6 +96,25 @@
 .linkedin {
   background-color: rgb(10, 102, 194);
   color: white;
+}
+
+.password-toggle {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle input {
+  cursor: pointer;
+  padding: 0;
+  width: 6%;
+}
+
+.password-toggle h4 {
+  cursor: default;
+  font-size: 10px;
+  margin: 0;
 }
 
 .social {
@@ -171,6 +196,21 @@
     width: 100%;
     border-bottom: 2px solid black;
   }
+
+  .viasocial a {
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: 30px;
+  }
+
+  .viasocial .social h3 {
+    margin-top: 30px;
+    padding-top: 8px;
+    font-size: 10px;
+    height: 27px;
+  }
+
   .withemail {
     border: none;
     width: 100%;
@@ -179,5 +219,10 @@
   .createnewaccount {
     border: none;
     width: 100%;
+  }
+  .password-toggle input {
+    cursor: pointer;
+    padding: 0;
+    width: 10%;
   }
 }

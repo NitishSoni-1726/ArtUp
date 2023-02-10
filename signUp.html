@@ -83,7 +83,19 @@
             <label>Email</label>
             <input type="email" placeholder="" required />
             <label>Phone Number</label>
-            <input type="tel" placeholder="+91-XXXXXXXXXX" required />
+            <input
+              type="tel"
+              placeholder="+91-XXXXXXXXXX"
+              minlength="10"
+              pattern="[0-9]{10}"
+              required
+            />
+            <label>Password</label>
+            <input type="password" minlength="8" required id="password" />
+            <div class="password">
+              <input type="checkbox" id="showpassword" />
+              <label>Show Password</label>
+            </div>
             <h1>Company Profile</h1>
             <p>
               This information will create a basic company profile in our system
@@ -146,7 +158,7 @@
               <option>Web</option>
             </select>
             <label>Funding Goal</label>
-            <input type="number" placeholder="Rs. XXXXXX" required />
+            <input type="number" placeholder="&#8377; XXXXXX" required />
             <div class="radio">
               <input
                 type="radio"
@@ -229,5 +241,6 @@
       </div>
     </div>
   </body>
+  <script src="signUp.js"></script>
   <script src="index.js"></script>
 </html>
