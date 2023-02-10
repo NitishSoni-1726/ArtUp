@@ -1,0 +1,99 @@
+.registration-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration {
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration form h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+
+.registration form p {
+  font-family: "Prata", serif;
+  font-size: 15px;
+}
+
+.registration input {
+  width: 80%;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  margin: 15px;
+  height: 30px;
+}
+
+.registration select {
+  width: 80%;
+  color: white;
+  background: transparent;
+  font-size: 20px;
+  margin: 15px;
+  height: 30px;
+}
+
+.registration label {
+  font-size: 15px;
+}
+
+.registration .radio input {
+  width: 5%;
+}
+
+.registration .radio {
+  display: flex;
+  align-items: center;
+}
+
+.registration .button {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  height: 40px;
+  padding: 0;
+  font-size: 20px;
+  align-self: center;
+  width: 40%;
+}
+
+.registration .button:hover {
+  transform: scale(1.1);
+}
+
+::placeholder {
+  color: white;
+}
+
+@media only screen and (min-width: 298px) and (max-width: 698px) {
+  .registration form input {
+    font-size: 15px;
+  }
+
+  .registration select {
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+}

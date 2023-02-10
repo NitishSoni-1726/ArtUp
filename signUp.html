@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-UP</title>
+    <title>Get-Started</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,6 +26,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="signUp.css" />
   </head>
   <body>
     <div class="navigations">
@@ -67,6 +68,106 @@
           </li>
         </ul>
       </nav>
+      <div class="registration-box">
+        <div class="registration">
+          <form>
+            <h1>User Account</h1>
+            <p>
+              Register your free ArtUp account and help us get to know you
+              better. You'll use this information to login to ArtUp.
+            </p>
+            <label>First Name</label>
+            <input type="text" placeholder="" required />
+            <label>Last Name</label>
+            <input type="text" placeholder="" required />
+            <label>Email</label>
+            <input type="email" placeholder="" required />
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91-XXXXXXXXXX" required />
+            <h1>Company Profile</h1>
+            <p>
+              This information will create a basic company profile in our system
+              and can be modified later.
+            </p>
+            <label>Business or Product Name</label>
+            <input type="text" placeholder="Ex. iPod" required />
+            <label>Quick Pitch</label>
+            <input
+              type="text"
+              placeholder="Ex. Revolutionary music player and entertainment device."
+              required
+            />
+            <label>Industry</label>
+            <select required>
+              <option>Select Industry</option>
+              <option>Beauty</option>
+              <option>Boats</option>
+              <option>Cars / Trucks</option>
+              <option>Commercial</option>
+              <option>Communications</option>
+              <option>Consumer Products</option>
+              <option>Design</option>
+              <option>Education</option>
+              <option>Energy</option>
+              <option>Entertainment</option>
+              <option>Fashion</option>
+              <option>Finance</option>
+              <option>Fitness</option>
+              <option>Food</option>
+              <option>Food Service</option>
+              <option>Gadgets</option>
+              <option>Games</option>
+              <option>Hardware</option>
+              <option>Health &amp; Beauty</option>
+              <option>Healthcare</option>
+              <option>Last Mile Logistics</option>
+              <option>Life Science</option>
+              <option>Media (tv, radio, print)</option>
+              <option>Mobile</option>
+              <option>Motorcycle</option>
+              <option>Motors</option>
+              <option>Other</option>
+              <option>Personal Care</option>
+              <option>Products</option>
+              <option>Real Estate</option>
+              <option>Rental</option>
+              <option>Residential</option>
+              <option>Restaurants</option>
+              <option>Retail</option>
+              <option>Services</option>
+              <option>Software</option>
+              <option>Specialty Retail</option>
+              <option>Sporting Goods</option>
+              <option>Sports</option>
+              <option>Stores</option>
+              <option>Stores (restaurants, coffee shops, bars)</option>
+              <option>Wellness</option>
+              <option>Technology</option>
+              <option>Web</option>
+            </select>
+            <label>Funding Goal</label>
+            <input type="number" placeholder="Rs. XXXXXX" required />
+            <div class="radio">
+              <input
+                type="radio"
+                name="Immediately"
+                checked="checked"
+                value="first"
+              />
+              <label>Immediately</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="Immediately" value="second" />
+              <label>1-3 Months</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="Immediately" value="third" />
+              <label>3+ Months</label>
+            </div>
+            <input type="submit" value="Register" class="button" />
+          </form>
+        </div>
+      </div>
       <div class="fifth-section">
         <div class="footer">
           <a class="heading" id="footer-get-started">Get Started</a>
