@@ -110,8 +110,8 @@ function Script(event) {
     location.href = "signUp.html";
   }
   function searchClick() {
-    console.log("Search");
-    location.href = "search.html";
+    const container = document.querySelector("#search-content");
+    container.classList.toggle("displayblock");
   }
   function investorsignUpClick() {
     console.log("Investors SignUp");

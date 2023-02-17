@@ -69,15 +69,15 @@
   width: 33%;
 }
 
-.viasocial a {
-  margin: 0;
-  cursor: pointer;
-  margin: 20px;
-  font-size: 50px;
+.social {
+  margin-top: 50px;
 }
-.viafacebook {
-  color: rgb(59, 89, 152);
+.social img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
 }
+
 .viagoogle {
   color: rgb(219 68 55);
 }

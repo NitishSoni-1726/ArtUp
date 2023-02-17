@@ -1,0 +1,142 @@
+.about-title {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: "Cinzel";
+}
+
+p {
+  font-family: "Prata", serif;
+}
+
+.about-title h1 {
+  font-size: 45px;
+}
+
+.about-title p {
+  font-size: 30px;
+  margin-top: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.about-content {
+  padding: 30px;
+}
+
+.about-content p {
+  margin: 40px;
+  font-size: 24px;
+}
+
+.about-first {
+  display: flex;
+  height: 30%;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-first-container {
+  padding: 50px;
+  margin-top: 30px;
+}
+
+.about-first-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-first-content h1 {
+  color: rgb(30, 52, 89);
+}
+
+.about-first-content p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.about-second {
+  padding: 150px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.funding {
+  border: 2px solid white;
+  padding: 18.5px;
+}
+
+.funding-head {
+  border: 2px solid white;
+  font-size: 15px;
+  padding: 30px;
+}
+
+.about-third {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.about-third h1 {
+  margin-bottom: 50px;
+}
+
+.about-team {
+  display: flex;
+  justify-content: center;
+}
+
+.team {
+  margin: 20px;
+  width: 22%;
+}
+
+.team img {
+  width: 100%;
+  height: 83%;
+}
+
+.team h1 {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.team p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1265px) and (max-width: 1400px) {
+  body {
+    font-size: 90%;
+  }
+}
+@media only screen and (min-width: 699px) and (max-width: 1264px) {
+  body {
+    font-size: 80%;
+  }
+}
+@media only screen and (min-width: 298px) and (max-width: 698px) {
+  body {
+    font-size: 70%;
+  }
+}
